@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', system-ui;
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #A1CCA5;
+}
+
+.main {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    border-radius: 12px;
+    padding: 24px;
+    width: 325px;
+    height: 475px;
+    background-color: #191c1a;
+    display: flex;
+    flex-direction: column;
+}
+.screen{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    border-radius: 8px;
+    background-color: #EDE7D9;
+    overflow: hidden;
+}
+
+.previous-operation,.current-operation {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    padding-right: 12px;
+    align-items: center;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.current-operation {
+    align-items: first baseline;
+    font-size: 2rem;
+    color: #191c1a;
+}
+
+.option-btn-container,.btn-container {
+    flex: 1;
+    display: flex;
+}
+
+button {
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 8px;
+    font-size: 2rem;
+    background-color: #374c3f;
+    color: #EDE7D9;
+}
+
+.btn-clear {
+    font-size: 1.3rem;
+    background-color: #F15946;
+    color: #191c1a;
+}
+
+.btn-delete {
+    font-size: 1.3rem;
+    background-color: #CAFE48;
+    color: #191c1a;
+}
+
+.footer {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
